@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
 import { HomeComponent } from './home/home.component';
+import { TestComponent } from './test/test.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
     HomeComponent,
+    TestComponent,
   ],
   template: `
     <main>
@@ -14,6 +16,7 @@ import { HomeComponent } from './home/home.component';
       </header>
       <section class="content">
         <app-home></app-home>
+        <app-test></app-test>
       </section>
     </main>
   `,
